@@ -1,0 +1,163 @@
+<html>
+    <head>
+       
+        <script src="C:\Users\Dhun\Downloads\ckeditor5-build-classic-41.4.2\ckeditor5-build-classic\ckeditor.js"></script>
+
+        <title>FORM</title>
+    </head>
+    <body>
+        <fieldset>        
+            <center><h1> Registration Form</h1><br>
+        <table>
+        <form>
+        <tr>
+            <td>
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name" required name="name" autofocus autocomplete="on"><br>
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                <label>Age:</label>
+                <input type="number" placeholder="Enter your age" required name="age"><br>
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                <label>Birth date:</label>
+                <input type="date" required name="bdate">
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                <label>Address:</label>
+                <textarea id="editor" placeholder="Enter your address" required name="address"></textarea><br>
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                <label>Contact No.:</label>
+                <input type="tel" placeholder="Enter your contact no." required name="contact"><br>
+            </td>
+        </tr>
+
+        
+
+        <tr>
+            <td><br>
+                <label>E-Mail:</label>
+                <input type="email" required placeholder="Enter E-Mail" name="email">
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                <label>Password:</label>
+                <input type="password" required placeholder="Enter password" name="password" maxlength="10">
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                <label>Gender:</label>
+                <label for="Male">Male</label>
+                <input type="radio" id="Male" value="Male" name="g1">
+                <label for="Female">Female</label>
+                <input type="radio" id="Male" value="Female" name="g1"><br>
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                <label>City:</label>
+                <select id="City">
+                    <option value="Rajkot">Rajkot</option>
+                    <option value="Ahemdabad">Ahemdabad</option>
+                    <option value="Surat" selected>Surat</option>
+                    <option value="Junagadh">Junagadh</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                <label>Select course:</label><br>
+                <input type="checkbox" value="Python" name="p">
+                <label>Python</label><br>
+                <input type="checkbox" value="Java" name="j">
+                <label>Java</label><br>
+                <input type="checkbox" value="Php" name="php">
+                <label>Php</label><br>
+                <input type="checkbox" value="Android" name="a">
+                <label>Android</label><br>
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                <label>Select a Time:</label>
+                <input type="time" name="time">
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                <label>Upload your file:</label>
+                <input type="file" name="myfile">
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                <label>Input your favourite color:</label>
+                <input type="color" name="fav" value="#7C2759">
+            </td>
+        </tr>
+
+        <tr>
+            <td><br><br>
+                <center>
+                <input type="submit" value="Submit" onclick="alert('Your form is submitted')"></center>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <center>
+                <input type="reset" value="Reset"></center>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <center>
+                <input type="image" src="submit.jpg" value="submit" height="80" width="80" alt="Submit"></center>
+            </td>
+        </tr>
+
+
+
+        </form>
+    </table>
+        </center>
+    </fieldset>
+
+   <!--<script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ), {
+                // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+            } )
+            .then( editor => {
+                window.editor = editor;
+            } )
+            .catch( err => {
+                console.error( err.stack );
+            } );
+    </script>-->
+    
+    </body>
+</html>
